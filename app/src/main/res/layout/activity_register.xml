@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.LoginActivity">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_mine_top1"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="请输入账号"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#333333">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_bg"
+                    android:hint="请输入密码"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_password_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#333333">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password_again"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_bg"
+                    android:hint="请再次输入密码"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/color_333333"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="注册"
+                android:textColor="@color/white"
+                app:cornerRadius="15sp"
+                app:iconSize="20dp"
+                app:iconTint="@color/color_333333"
+                app:strokeColor="@color/color_333333"
+                app:strokeWidth="2dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+</layout>

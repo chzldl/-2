@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/color_333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:layout_marginTop="@dimen/dp_30"
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/tab_home"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="世界杯"
+                    android:textColor="@drawable/top"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp"
+                    android:checked="true" />
+
+
+
+                <RadioButton
+                    android:id="@+id/tab_analyse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="动漫"
+                    android:textColor="@drawable/top"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+                <RadioButton
+                    android:id="@+id/tab_circle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="游戏"
+                    android:textColor="@drawable/top"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <RadioButton
+                    android:id="@+id/tab_me"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="萌宠"
+                    android:textColor="@drawable/top"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+                <RadioButton
+                    android:id="@+id/tab_food"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="美食"
+                    android:textColor="@drawable/top"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+            </RadioGroup>
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_E1E1E1" />
+
+        <com.example.redbook.widget.NoScrollViewPager
+            android:id="@+id/main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+
+
+
+    </LinearLayout>
+</layout>

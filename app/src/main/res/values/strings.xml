@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">小红书</string>
+    <string name="personal_data_head">头像</string>
+    <string name="personal_data_name">昵称</string>
+    <string name="personal_data_name_hint">设置昵称</string>
+    <string name="personal_data_school">学校</string>
+    <string name="personal_data_school_hint">设置学校</string>
+    <string name="personal_data_professional">专业</string>
+    <string name="personal_data_professional_hint">设置专业</string>
+    <string name="personal_data_student_id">学号</string>
+    <string name="personal_data_student_id_hint">设置学号</string>
+    <string name="personal_data_biye">毕业</string>
+    <string name="personal_data_biye_hint">设置毕业情况</string>
+    <string name="personal_data_phone">手机号</string>
+    <string name="personal_data_phone_hint">设置手机号</string>
+    <string name="personal_data_pwd">密码</string>
+    <string name="personal_data_pwd_hint">设置密码</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="select_max_hint">最多只能选择 %d 项</string>
+    <string name="select_min_hint">至少要选择 %d 项</string>
+</resources>

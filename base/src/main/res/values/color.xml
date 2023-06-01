@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <color name="black95">#F2000000</color>
+    <color name="black90">#E6000000</color>
+    <color name="black85">#D9000000</color>
+    <color name="black80">#CC000000</color>
+    <color name="black75">#B000000F</color>
+    <color name="black70">#B3000000</color>
+    <color name="black65">#A6000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black55">#8C000000</color>
+    <color name="black50">#80000000</color>
+    <color name="black45">#73000000</color>
+    <color name="black40">#66000000</color>
+    <color name="black35">#59000000</color>
+    <color name="black30">#4D000000</color>
+    <color name="black25">#40000000</color>
+    <color name="black20">#33000000</color>
+    <color name="black15">#26000000</color>
+    <color name="black10">#1A000000</color>
+    <color name="black5">#0D000000</color>
+
+    <color name="common_accent_color">#5A8DDF</color>
+    <color name="common_window_background_color">#F4F4F4</color>
+    <color name="common_text_color">#333333</color>
+<!--    <color name="common_text_hint_color">@color/panda</color>-->
+    <!-- 对话框确认按钮的文本颜色 -->
+    <color name="common_confirm_text_color">#007AFF</color>
+    <!-- 对话框取消按钮的文本颜色 -->
+    <color name="common_cancel_text_color">#F44336</color>
+</resources>

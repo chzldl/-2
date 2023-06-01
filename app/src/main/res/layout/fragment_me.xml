@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.example.redbook.widget.CircleImageView
+                        android:background="@drawable/head_default"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/image_head"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="张三"
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <com.example.redbook.widget.MenuOptionsView
+                android:visibility="gone"
+                app:img_left_src="@drawable/icon_wenzhang"
+                app:img_right_src = "@drawable/next"
+                app:title_left = "我的动态"
+                app:imgLpadding = "15dp"
+                app:imgRpadding = "8dp"
+                app:imgLmargin = "15dp"
+                app:leftTvSize = "16sp"
+                android:id="@+id/ic_wenzhang"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:background="@color/color_E1E1E1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <com.example.redbook.widget.MenuOptionsView
+                app:img_left_src="@drawable/icon_user"
+                app:img_right_src = "@drawable/next"
+                app:title_left = "用户信息"
+                app:imgLpadding = "15dp"
+                app:imgRpadding = "8dp"
+                app:imgLmargin = "15dp"
+                app:leftTvSize = "16sp"
+                android:id="@+id/ic_user"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:background="@color/color_E1E1E1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <com.example.redbook.widget.SettingBar
+                android:id="@+id/ic_wnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftDrawable="@drawable/wnt"
+                app:bar_leftText="清理缓存"
+                tools:bar_rightText="未设置" />
+            <View
+                android:background="@color/color_E1E1E1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <com.example.redbook.widget.MenuOptionsView
+                app:img_left_src="@drawable/password"
+                app:img_right_src = "@drawable/next"
+                app:title_left = "修改密码"
+                app:imgLpadding = "15dp"
+                app:imgRpadding = "8dp"
+                app:imgLmargin = "15dp"
+                app:leftTvSize = "16sp"
+                android:id="@+id/ic_change_password"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:background="@color/color_E1E1E1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <com.example.redbook.widget.MenuOptionsView
+                app:img_left_src="@drawable/icon_head"
+                app:img_right_src = "@drawable/next"
+                app:title_left = "修改头像"
+                app:imgLpadding = "15dp"
+                app:imgRpadding = "8dp"
+                app:imgLmargin = "15dp"
+                app:leftTvSize = "16sp"
+                android:id="@+id/ic_change_head"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:background="@color/color_E1E1E1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/color_333333"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="退出"
+                android:textColor="@color/white"
+                app:cornerRadius="15sp"
+                app:iconSize="20dp"
+                app:iconTint="@color/color_333333"
+                app:strokeColor="@color/color_333333"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+    </ScrollView>
+</layout>

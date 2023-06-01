@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Redbook" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="menu_options_view_style">
+        <attr name="title_left" format="string"/>
+        <attr name="title_right" format="string"/>
+        <attr name="title_center" format="string"/>
+        <attr name="img_left_src" format="reference"/>
+        <attr name="img_right_src" format="reference"/>
+
+        <attr name="imgLpadding" format="dimension"/>
+        <attr name="imgRpadding" format="dimension"/>
+
+        <attr name="imgLmargin" format="dimension"/>
+        <attr name="imgRmargin" format="dimension"/>
+
+        <attr name="leftTvSize" format="dimension"/>
+        <attr name="rightTvSize" format="dimension"/>
+        <attr name="centerTvSize" format="dimension"/>
+
+    </declare-styleable>
+</resources>

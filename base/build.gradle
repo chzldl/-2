@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 31
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+        buildFeatures{
+            viewBinding true
+            dataBinding true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    api "org.greenrobot:eventbus:3.3.1"
+    //今日头条适配
+    api 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
+    //沉浸式框架
+    // 将 $lastVersion 替换成上图中的版本号
+    api 'com.gitee.zackratos:UltimateBarX:0.8.0'
+    // snapshot 版本
+    api 'com.gitee.zackratos:UltimateBarX:0.8.0'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.8'
+    // 吐司框架：https://github.com/getActivity/ToastUtils
+    implementation 'com.github.getActivity:ToastUtils:9.5'
+
+    // Shape 框架：https://github.com/getActivity/ShapeView
+    implementation 'com.github.getActivity:ShapeView:6.0'
+
+}

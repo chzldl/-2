@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/color_333333"
+        android:fitsSystemWindows="true"
+        app:titleMargin="0dp"
+        android:layout_width="match_parent"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginLeft="15dp"
+                android:id="@+id/rl_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/baseline_arrow_back_ios_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+</layout>

@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.redbook'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.redbook"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildFeatures{
+            viewBinding true
+            dataBinding true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation project(path: ':base')
+    implementation files('libs/xUtils-3.2.2.jar')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+    //今日头条适配
+    implementation 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
+    //沉浸式框架
+    // 将 $lastVersion 替换成上图中的版本号
+    implementation 'com.gitee.zackratos:UltimateBarX:0.8.0'
+    implementation 'io.github.youth5201314:banner:2.2.2'
+    implementation 'com.github.HuanTanSheng:EasyPhotos:3.1.5'
+    //dialog
+    implementation 'com.github.HanHuoBin:BaseDialog:1.2.0'
+}

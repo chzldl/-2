@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toobar"/>
+        <TextView
+            android:text="文案"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/et_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:background="@drawable/et_shape"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="top|left"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:hint="输入你想说的话(不超过100字)"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"/>
+        <GridView
+            android:layout_marginTop="@dimen/dp_10"
+            android:scrollbars="none"
+            android:id="@+id/gv_upload"
+            android:numColumns="4"
+            android:horizontalSpacing="@dimen/dp_10"
+            android:verticalSpacing="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/color_333333"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="发布"
+            android:textColor="@color/white"
+            app:cornerRadius="15sp"
+            app:iconSize="20dp"
+            app:iconTint="@color/color_333333"
+            app:strokeColor="@color/color_333333"
+            app:strokeWidth="2dp" />
+    </LinearLayout>
+</layout>
